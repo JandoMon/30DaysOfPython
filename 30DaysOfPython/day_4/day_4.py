@@ -52,6 +52,10 @@ print(coding_for_all.replace('Coding', 'Python').replace('All', 'Everyone'))
 #Q13: Split Coding for All using space as the seperator 
 print(coding_for_all.split(' '))
 
+#Q14: Split the list by the commas
+companies = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+print(companies.split(','))
+
 
 
 
