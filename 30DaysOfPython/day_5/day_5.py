@@ -49,3 +49,28 @@ print('Q10: Print the list after modifying the list')
 it_companies[0]= 'X'
 print(it_companies)
 print()
+
+#Q11: Add an IT company to the list
+print('Q11: Add an IT Compnay to the list')
+it_companies.append('TI')
+print(it_companies)
+print()
+
+#Q12: Insert an IT company in the middle of the companies list
+print('Q12: Insert an IT company in the middle of the companies list')
+middle_IT= int((len(it_companies)-1)/2)
+it_companies.insert(middle_IT, 'NIVIDIA')
+print(it_companies)
+print()
+
+#Q13: Change one of the IT companies to uppercase
+print('Q13: Change one of the IT companies to uppercase')
+index_apple = it_companies.index('Apple')
+it_companies[index_apple] = it_companies[index_apple].upper()
+print(it_companies)
+print()
+
+#Q14: Join the IT companies with '#; ' 
+print('Join the IT companies with #;')
+print('#; '.join(it_companies))
+print()
