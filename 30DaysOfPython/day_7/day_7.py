@@ -75,3 +75,5 @@ except NameError:
 print()
 
  
+#Q12: Convert the ages to a set and compare the length of the list vs set
+print('')
