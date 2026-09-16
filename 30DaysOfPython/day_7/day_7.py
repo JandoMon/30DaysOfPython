@@ -76,4 +76,22 @@ print()
 
  
 #Q12: Convert the ages to a set and compare the length of the list vs set
-print('')
+print('Convert the ages to a set and compare the length of the list vs set')
+ages_st = set(age)
+print(('They are the same' if len(ages_st)== len(age) else 'They are the different lenghts'))
+print()
+
+#Q13: Explain the difference between the following data types: string, list, tuple and set
+print('Explain the difference between the following data types: string, list, tuple and set')
+print('A String is a just a string of letters or words that is immutable and ordered. \n' \
+'A list is a collection of objects that are ordered and can have duplicates.\n' \
+'A tuple is a collection of objects that are ordered but cannot be changed once createdn\n' \
+'A Set is a collection of objects that are unordered and do not allow duplicates')
+print()
+
+#Q14: I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence? Use the split methods and set to get the unique words.
+print('I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence? Use the split methods and set to get the unique words.')
+sentence = 'I am a teacher and I love to inspire and teach people.'
+lst = sentence.split()
+st = set(lst)
+print(len(st))
