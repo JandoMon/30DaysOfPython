@@ -32,3 +32,20 @@ elif a < b:
 else:
     print('The numbers are the same')
 print()
+
+#Q4: Grading system
+print('Make an automatic grading system')
+grade = input('Enter your grade: ')
+grade = int(grade)
+
+if grade > 89:
+    print('You got an A')
+elif grade > 79:
+    print('You got a B')
+elif grade > 69:
+    print('You got a C')
+elif grade > 59:
+    print('You got a D')
+else:
+    print('You failed!')
+print()
