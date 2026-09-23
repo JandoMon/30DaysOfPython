@@ -49,3 +49,17 @@ elif grade > 59:
 else:
     print('You failed!')
 print()
+
+#Q5: Find the season of the year based on the month
+print('Find the season of the year based on the month')
+month = input('Input the month: ')
+
+if(month == 'September' or month == 'October' or month == 'November'):
+    print('It is fall')
+elif(month == 'December' or month == 'January' or month == 'February'):
+    print('It is winter')
+elif(month == 'March' or month == 'April' or month == 'May'):
+    print('It is spring')
+elif(month == 'June' or month == 'July' or month == 'August'):
+    print('It is summer')
+print()
