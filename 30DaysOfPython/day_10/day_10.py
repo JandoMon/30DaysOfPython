@@ -63,3 +63,75 @@ elif(month == 'March' or month == 'April' or month == 'May'):
 elif(month == 'June' or month == 'July' or month == 'August'):
     print('It is summer')
 print()
+
+#Q6: If a fruit doesn't exist in the list add the fruit to the list and print the modified list. If the fruit exists print('That fruit already exist in the list')
+fruits = ['banana', 'orange', 'mango', 'lemon']
+new_fruit = input('Enter a fruit: ')
+if not new_fruit in fruits:
+    print('Not in list! Will add now!')
+    fruits.append(new_fruit)
+    print(fruits)
+else:
+    print('That fruit already exists in the list')
+print()
+
+#Q7: Do task on person
+print('Do a background check! ')
+person={
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+    }
+if not person: 
+    print('I have no skills')
+else:
+    middle_index = int((len(person))/2)
+    print('Middle Skill: ', person['skills'][middle_index])
+print()
+
+is_Python = 'Python' in person['skills']
+if not person: 
+    print('I have no skills')
+elif is_Python:
+    print('Has Python skills')
+else:
+    print('Has no Python skills')
+print()
+
+#Q7: 
+# If a person skills has only JavaScript and React, print('He is a front end developer'), 
+# if the person skills has Node, Python, MongoDB, print('He is a backend developer'), 
+# if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), 
+# else print('unknown title') - for more accurate results more conditions can be nested!
+# If the person is married and if he lives in Finland, print the information in the following format:
+
+is_Javascript = 'Javascript' in person['skills']
+is_React = 'React' in person['skills']
+is_Node = 'Node' in person['skills']
+is_Python = 'Python' in person['skills']
+is_MongoDB = 'MongoDB' in person['skills']
+
+print('Job Title Assignment/Assessment:')
+if is_Javascript and is_React:
+    print('He is a front end developer')
+elif is_Node and is_Python and is_MongoDB:
+    print('He is a backend developer ')
+elif is_React and is_Node and is_MongoDB:
+    print('He is a fullstack developer')
+else: 
+    print('unknown title')
+
+is_Married = person['is_married']
+is_Finland = person['country']
+
+if is_Married and  is_Finland:
+    print(person['first_name'], person['last_name'], 'lives in', person['country'], '. He is married')
+else:
+    print('He is not married or he does not live in Finland')
