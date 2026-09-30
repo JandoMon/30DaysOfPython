@@ -1,4 +1,5 @@
 from math import pi
+import cmath
 
 #Q1: Declare a function add_two_numbers. It takes two parameters and it returns a sum
 print('Write a function that adds two numbers')
@@ -63,4 +64,26 @@ def calculate_slope(x_1, y_1, x_2, y_2):
 print('Slope:', calculate_slope(1,2,2,5))
 print()
 
+#Q7: Calculate the solution set of a quadratic equation
+def calculate_quadratic_eqn(A, B, C):
+    discriminat = B**2 - 4*A*C
+    if(discriminat>0):
+        print('Two distinct real solutions')
+        solution_one = (-B + (discriminat ** .5)) / (2 * A)
+        solution_two = (-B - (discriminat ** .5)) / (2 * A)
+        return {solution_one, solution_two}
 
+    elif(discriminat is 0):
+        print('One repeated solution')
+        solution_one = (-B + (discriminat ** .5)) / (2 * A)
+        return solution_one
+    else:
+        print('Two imaginary solutions')
+        solution_one = (-B + cmath.sqrt(discriminat)) / (2 * A)
+        solution_two = (-B - cmath.sqrt(discriminat)) / (2 * A)
+        return {solution_one, solution_two}
+A = 1
+B = 2
+C = 5
+print(A,'x^2 +', B, 'x +', C, '= 0' )
+print('Solution of Quadratic Equation:', calculate_quadratic_eqn(A,B,C))
