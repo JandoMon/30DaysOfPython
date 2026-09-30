@@ -54,4 +54,13 @@ def check_season(month):
 month = 'December'
 print('The month is', month,'so the season is', check_season(month))
 
+#Q6: Calculate the slope of a linear equation
+print('Write a functions that calculates the slope of a linear equation')
+def calculate_slope(x_1, y_1, x_2, y_2):
+    rise = y_2 - y_1
+    run = x_2 - x_1
+    return(rise/run)
+print('Slope:', calculate_slope(1,2,2,5))
+print()
+
 
