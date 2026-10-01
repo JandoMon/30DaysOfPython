@@ -65,6 +65,7 @@ print('Slope:', calculate_slope(1,2,2,5))
 print()
 
 #Q7: Calculate the solution set of a quadratic equation
+print('Write a functions that calculates the solution set of a quadratic equation')
 def calculate_quadratic_eqn(A, B, C):
     discriminat = B**2 - 4*A*C
     if(discriminat>0):
@@ -87,3 +88,44 @@ B = 2
 C = 5
 print(A,'x^2 +', B, 'x +', C, '= 0' )
 print('Solution of Quadratic Equation:', calculate_quadratic_eqn(A,B,C))
+print()
+
+#Q8: Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
+print('Write a function that takes a list as a parameter and it prints out each element of the list')
+def print_lits(list):
+    for item in list:
+        print(item)
+    print('List has been printed')
+print_lits([1,5,7,2,7,8])
+print()
+
+#Q9: Write a functions that reverses a list using a loop
+print('Write a functions that reverses a list using a loop')
+def reverse_list(list_input):
+    reversed_list = []
+    for i in range(len(list_input)-1, -1,-1):
+        reversed_list.append(list_input[i])
+    print('List has been reversed')
+    return reversed_list
+new_list = reverse_list([1,2,3,4,5])
+print(new_list)
+print()
+
+#Q10: Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
+print('Write a function that capitalizes everything in a list')
+def capitalize_list_items(list_input):
+    upper = []
+    for word in list_input:
+        upper.append(word.upper())
+    print('List has been capitalized')
+    return upper
+new_list = capitalize_list_items(['banana', 'apple', 'coconut', 'orange' ])
+print(new_list)
+print()
+
+#Q11: Write a function that adds an item
+print('Write a function that adds an item')
+def add_item(list_input, item):
+    return list_input + [item]
+print(add_item(['apple', 'banana', 'pineapple'], 'coconut'))
+    
