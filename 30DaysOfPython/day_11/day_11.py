@@ -128,4 +128,18 @@ print('Write a function that adds an item')
 def add_item(list_input, item):
     return list_input + [item]
 print(add_item(['apple', 'banana', 'pineapple'], 'coconut'))
+print()
+
+#Q12: Make a function that removes an item from a list
+print('Make a function that removes an item from a list')
+def remove_item(input_list, item):
     
+    try:
+        position = input_list.index(item)
+        del input_list[position]
+    except ValueError: 
+        print('Value not found')
+    return input_list
+
+print(remove_item([1,2,4,5,6], 4))
+print()
