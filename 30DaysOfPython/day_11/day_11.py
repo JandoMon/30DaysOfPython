@@ -143,3 +143,50 @@ def remove_item(input_list, item):
 
 print(remove_item([1,2,4,5,6], 4))
 print()
+
+#Q13: sum of numbers in range
+print('Write a function that returns a sum of numbers in a range')
+def add_item(number):
+    sum = 0
+    for i in range(number+1):
+        sum+=i
+    return sum
+print(add_item(10))
+print()
+
+#Q14: Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range.
+print('Write a function that returns a sum of odd numbers in a range')
+def sum_of_odds(number):
+    sum = 0
+    for i in range(number+1):
+        if i % 2 is 1:
+            sum += i
+    return sum
+print(sum_of_odds(11))
+print()
+
+#Q15: Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that - range.
+print('Write a function that returns a sum of even numbers in a range')
+def sum_of_even(number):
+    sum = 0
+    for i in range(number):
+        if i % 2 is 0:
+            sum += i
+    return sum
+print(sum_of_even(10))
+print()
+
+#Lvl2 Q1: Declare a function named evens_and_odds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+print('Write a function that returns a count of even and odd numbers in a range')
+def evens_and_odds(number):
+    evens = 0
+    odds = 0 
+    for i in range(number+1):
+        if i % 2 is 0:
+            evens += 1
+        else:
+            odds += 1
+    return [evens, odds]
+solution = evens_and_odds(100)
+print('Evens:', solution[0],'\nOdds:', solution[1])
+print()
